@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Create your <b>Secret</b> ans <b>Token</b></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,16 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div id="app">
+                        <div class="mb-3">
+                            <passport-clients></passport-clients>
+                        </div>
+                        <div class="mb-3">
+                            <passport-authorized-clients></passport-authorized-clients>
+                        </div>
+                        
+                        <passport-personal-access-tokens></passport-personal-access-tokens>
+                    </div>
                 </div>
             </div>
         </div>
